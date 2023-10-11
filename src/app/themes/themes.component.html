@@ -1,0 +1,7 @@
+<div class="main-container">
+  <div class="cards-container">
+    <ng-container *ngFor="let d of data$ | async">
+      <app-card [data]="d" (questionClick)="onQuestionClick($event)"></app-card>
+    </ng-container>
+  </div>
+</div>

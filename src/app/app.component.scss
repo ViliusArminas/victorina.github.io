@@ -1,0 +1,29 @@
+.button-reset {
+    background-color: transparent;
+    font-family: 'Abril Fatface';
+    height: 40px;
+    width: 60px;
+    right:0;
+    bottom: 0;
+    position: absolute;
+    margin: 10px;
+    z-index: 100;
+    color: yellow;
+    border: none;
+    cursor: pointer;
+}
+
+.button-back {
+    background-color: transparent;
+    font-family: 'Abril Fatface';
+    height: 40px;
+    width: 60px;
+    left:0;
+    bottom: 0;
+    position: absolute;
+    margin: 10px;
+    z-index: 100;
+    color: yellow;
+    border: none;
+    cursor: pointer;
+}

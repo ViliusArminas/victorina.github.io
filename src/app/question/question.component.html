@@ -1,0 +1,7 @@
+<div class="image-container">
+  <img class="image" [src]="getBackgroundImage(question$ | async)" />
+  <div class="buttons-container">
+    <button class="action-button" (click)="goBack()">Back</button>
+    <button *ngIf="question$ | async as question"class="action-button" (click)="completeQuestion(question)">Complete</button>
+  </div>
+</div>

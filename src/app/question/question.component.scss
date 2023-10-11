@@ -1,0 +1,26 @@
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 375px;
+    width: auto;
+    justify-content: center;
+}
+
+.buttons-container {
+    display: flex;
+    padding: 10px 80px;
+    justify-content: space-between;
+}
+
+.action-button {
+    background-color: transparent;
+    font-family: 'Abril Fatface';
+    font-size: 30px;
+    height: 100px;
+    width: 160px;
+    margin: 10px;
+    color: yellow;
+    border: none;
+    cursor: pointer;
+}

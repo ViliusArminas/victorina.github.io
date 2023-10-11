@@ -1,0 +1,14 @@
+.main-container {
+  display: flex;
+  padding: 30px;
+  width: auto;
+  justify-content: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  padding: 0 375px;
+  gap: 10px;
+}

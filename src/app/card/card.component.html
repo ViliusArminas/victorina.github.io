@@ -1,0 +1,19 @@
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img [src]="getImageUrl(data?.image)" alt="Avatar" />
+    </div>
+    <div class="flip-card-back">
+      <h1 class="flip-back-title">{{ data?.title }}</h1>
+      <div class="buttons-container">
+        <button
+          *ngFor="let q of data?.questions"
+          class="btn-image"
+          [ngStyle]="{'background-image': getBackgroundImage(q)}"
+          (click)="onClick(q)"
+        >
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
