@@ -36,8 +36,8 @@ const metaReducers: Array<MetaReducer<any, any>> = [localStorageSyncReducer];
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states
     }),
+    
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -18,7 +18,7 @@ export class CardComponent {
   }>();
 
   getImageUrl(image: string | undefined) {
-    return `../assets/images/${image}`;
+    return `assets/images/${image}`;
   }
 
   onClick(question: VictorinaQuestion) {
@@ -28,6 +28,6 @@ export class CardComponent {
     }
   }
   getBackgroundImage(question: VictorinaQuestion) {
-    return `url("/assets/images/button-${question.points}${question.answered ? '-disabled': ''}.png")`;
+    return `url("assets/images/button-${question.points}${question.answered ? '-disabled': ''}.png")`;
   }
 }

@@ -27,7 +27,7 @@ export class QuestionComponent implements OnInit {
   }
 
   getBackgroundImage(question?: VictorinaQuestion | null) {
-    return `../assets/images/${question?.image}`;
+    return `assets/images/${question?.image}`;
   }
 
   completeQuestion(question?: VictorinaQuestion | null) {

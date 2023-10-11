@@ -51,7 +51,7 @@
 
 .flip-card-back {
   background-size: 100% 100%;
-  background-image: url("/assets/images/card-back.jpg");
+  background-image: url("~src/assets/images/card-back.jpg");
   background-color: transparent;
   color: black;
   transform: rotateY(180deg);
