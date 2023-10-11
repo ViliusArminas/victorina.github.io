@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "baseHref": "https://viliusarminas.github.io/victorina.github.io/",
-            "outputPath": "docs",
+            "outputPath": "dist/protmusis",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
