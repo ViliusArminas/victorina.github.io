@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "/victorina.github.io/",
+            "baseHref": "https://viliusarminas.github.io/victorina.github.io/",
             "outputPath": "dist/protmusis",
             "index": "src/index.html",
             "main": "src/main.ts",
