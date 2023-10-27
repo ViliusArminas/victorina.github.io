@@ -68,7 +68,7 @@ export class QuestionComponent implements OnInit {
   }
 
   getBackgroundImage(question?: VictorinaQuestion | null) {
-    return `assets/images/${question?.image}`;
+    return `assets/images/${question?.answered ? question?.answerImage : question?.image}`;
   }
 
   completeQuestion(question?: VictorinaQuestion | null) {
@@ -79,7 +79,6 @@ export class QuestionComponent implements OnInit {
           questionId: question?.id ?? 0,
         })
       );
-      this.router.navigateByUrl('/themes');
     });
   }
 

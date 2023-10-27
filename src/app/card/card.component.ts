@@ -22,12 +22,11 @@ export class CardComponent {
   }
 
   onClick(question: VictorinaQuestion) {
-    console.log('test2');
-    if (!question.answered) {
-      this.questionClick.emit({ question, themeId: this.data?.id ?? 0 });
-    }
+    this.questionClick.emit({ question, themeId: this.data?.id ?? 0 });
   }
   getBackgroundImage(question: VictorinaQuestion) {
-    return `url("assets/images/button-${question.points}${question.answered ? '-disabled': ''}.png")`;
+    return `url("assets/images/button-${question.points}${
+      question.answered ? '-disabled' : ''
+    }.png")`;
   }
 }

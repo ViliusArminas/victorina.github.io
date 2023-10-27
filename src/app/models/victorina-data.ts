@@ -10,8 +10,8 @@ export interface VictorinaQuestion {
     points: number,
     question: string,
     image?: string;
+    answerImage?: string;
     answered: boolean,
-    ceasars?: boolean,
     answer?: string
 }
 
