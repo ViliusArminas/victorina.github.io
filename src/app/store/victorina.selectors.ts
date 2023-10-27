@@ -40,4 +40,4 @@ export const selectFeature = (state: any) => state[victorinaReducerKey];
       }
   );
 
-  
+

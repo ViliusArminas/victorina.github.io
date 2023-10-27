@@ -1,7 +1,11 @@
 <div class="image-container">
   <img class="image" [src]="getBackgroundImage(question$ | async)" />
   <div class="buttons-container">
-    <button class="action-button" (click)="goBack()">Back</button>
-    <button *ngIf="question$ | async as question"class="action-button" (click)="completeQuestion(question)">Complete</button>
+    <button class="action-button" (click)="goBack()">Atgal</button>
+    <mat-form-field [ngClass]="{'ceasars-input': true, 'ceasars-input--error': answerSubmitted && answerError, 'ceasars-input--success': answerSubmitted && answerSuccess  }">
+      <mat-label>Atsakymas</mat-label>
+      <input  matInput  [(ngModel)]="answer" >
+    </mat-form-field>
+    <button *ngIf="question$ | async as question" class="action-button" (click)="completeQuestion(question)">Atsakyta</button>
   </div>
 </div>

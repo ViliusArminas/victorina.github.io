@@ -11,6 +11,53 @@
     display: flex;
     padding: 10px 80px;
     justify-content: space-between;
+    align-items: center;
+}
+
+.ceasars-container {
+    display: flex;
+    padding: 0 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ceasars-input {
+    font-family: 'Abril Fatface';
+    font-size: 20px;
+    height: 80px;
+    width: 300px;
+    color: #ECAA2B;
+
+    ::ng-deep .mdc-floating-label {
+        color: #ECAA2B !important;
+    }
+    
+    // mat-input carent color
+     ::ng-deep .mat-mdc-input-element {
+        caret-color: #ECAA2B!important;
+    }
+
+    &--error {
+         ::ng-deep .mdc-floating-label {
+            color: red !important;
+        }
+        
+        // mat-input carent color
+         ::ng-deep .mat-mdc-input-element {
+            caret-color: red !important;
+        }
+    }
+
+    &--success {
+        ::ng-deep .mdc-floating-label {
+           color: green !important;
+       }
+       
+       // mat-input carent color
+        ::ng-deep .mat-mdc-input-element {
+           caret-color: green !important;
+       }
+   }
 }
 
 .action-button {
@@ -20,7 +67,7 @@
     height: 100px;
     width: 160px;
     margin: 10px;
-    color: yellow;
+    color: #ECAA2B;
     border: none;
     cursor: pointer;
 }

@@ -49,6 +49,7 @@ export const DefaultVictorinaData: VictorinaData[] = [
       { id: 1, points: 1, question: 'test', answered: false },
       { id: 2, points: 2, question: 'test', answered: false },
       { id: 3, points: 3, question: 'test', answered: false },
+      { id: 4, points: 4, question: 'test', ceasars: true, answered: false, answer: 'CEASARCIPHER' },
     ],
   },
   {

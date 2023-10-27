@@ -11,7 +11,8 @@ export interface VictorinaQuestion {
     question: string,
     image?: string;
     answered: boolean,
-    answers?: VictorinaQuestionAnswer[]
+    ceasars?: boolean,
+    answer?: string
 }
 
 export interface VictorinaQuestionAnswer {
