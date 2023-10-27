@@ -68,10 +68,11 @@ export class QuestionComponent implements OnInit {
   }
 
   getBackgroundImage(question?: VictorinaQuestion | null) {
-    return `assets/images/${question?.answered ? question?.answerImage : question?.image}`;
+    return `assets/images/${this.answerSuccess && question?.answerImage ? question?.answerImage : question?.image}`;
   }
 
   completeQuestion(question?: VictorinaQuestion | null) {
+    this.answerSuccess = true;
     this.selectedThemeId$.pipe(take(1)).subscribe((themeId) => {
       this.store.dispatch(
         VictorinaActions.completeQuestion({
