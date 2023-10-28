@@ -192,7 +192,8 @@ export const DefaultVictorinaData: VictorinaData[] = [
     title: 'Žaidimai',
     image: 'img-zaidimai.jpg',
     questions: [
-      { id: 1, points: 1, question: 'test', answered: false },
+      { id: 1, points: 1, question: 'test', answered: false,    image: 'Zaidimai-1pt.jpg',
+      answerImage: 'Zaidimai-1pt-answer.jpg', },
       {
         id: 2,
         points: 2,
@@ -236,7 +237,7 @@ export const DefaultVictorinaData: VictorinaData[] = [
         points: 3,
         question: 'test',
         answered: false,
-        image: 'mystery-1pt.jpg',
+        image: 'mystery-3pt.jpg',
       },
     ],
   },
